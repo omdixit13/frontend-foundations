@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer</title>
+</head>
+<body>
+
+    <h2 id="text">Change my color</h2>
+
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('green')">Green</button>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById("text").style.color = color;
+        }
+    </script>
+
+</body>
+</html>
