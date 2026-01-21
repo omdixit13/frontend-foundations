@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Next Question</title>
+</head>
+<body>
+
+    <h2 id="question">What is 2 + 2?</h2>
+
+    <button onclick="nextQuestion()">Next Question</button>
+
+    <script>
+        const questions = [
+            "What is 2 + 2?",
+            "What is 5 + 3?",
+            "What is 10 - 4?"
+        ];
+
+        let index = 0;
+
+        function nextQuestion() {
+            index = index + 1;
+            if (index >= questions.length) {
+                index = 0;
+            }
+            document.getElementById("question").innerText = questions[index];
+        }
+    </script>
+
+</body>
+</html>
